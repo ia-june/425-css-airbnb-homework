@@ -1,3 +1,51 @@
-h1 {
-  color: salmon;
+
+/* css browser reset */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color:grey;
+}
+
+body {
+  background-color: #edefec;
+}
+
+.card {
+  text-align: center;
+  margin: 1rem;
+}
+
+.card section {
+  display: inline-block;
+  /* this is the parent that we make relative
+  so that the child can be absolute to it */
+  position: relative;
+}
+
+.images img {
+  width: 20rem;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.images p {
+  font-weight: 600;
+  color: white;
+  /* make this position absolute and the parent tag relative */
+  position: absolute;
+  /* use top and left to push text around */
+  top: 50%;
+  left: 50%;
+  /* transform translates to center using negative values */
+  transform: translate(-50%,-50%);
+}
+
+.card button {
+  background-color: white;
+  border: .12rem solid #55595c;
+  width: 20rem;
+  padding: .5rem;
+  font-weight: 600;
+  color: grey;
 }
